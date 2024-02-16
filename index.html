@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken Price Calculator</title>
+</head>
+<body>
+
+<script>
+  function calculateChickenPrice() {
+    // Ask the user to enter the weight of chicken in grams
+    var weightGrams = prompt("Enter the weight of chicken in grams:");
+
+    // Convert weight from grams to kilograms
+    var weightKg = weightGrams / 1000;
+
+    // Calculate the price based on the weight
+    var price = weightKg * 500; // Price per kg is 500 rupees
+
+    // Display the calculated price
+    alert("You have to pay " + price + " rupees for " + weightGrams + " grams of chicken.");
+  }
+
+  // Call the function when the page loads
+  calculateChickenPrice();
+</script>
+
+</body>
+</html>
